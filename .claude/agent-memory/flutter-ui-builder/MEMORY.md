@@ -1,0 +1,1 @@
+- [Project Architecture](project-architecture.md) — Feature-first Clean Architecture conventions, Riverpod/Freezed/GoRouter stack, naming and layer rules

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "338448012987",
+    "firebase_url": "https://betaapp-22tfrp-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "betaapp-22tfrp",
+    "storage_bucket": "betaapp-22tfrp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338448012987:android:aa5014e3cba0dbbbe7fb9e",
+        "android_client_info": {
+          "package_name": "com.example.bkic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9nG8nIsOaWd6vQ4HPbrZxSV3WA7rOeb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338448012987:android:4425ed7a1abb0769e7fb9e",
+        "android_client_info": {
+          "package_name": "com.example.todo_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9nG8nIsOaWd6vQ4HPbrZxSV3WA7rOeb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338448012987:android:e9f4aa4a0367dfbce7fb9e",
+        "android_client_info": {
+          "package_name": "com.mycompany.betaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9nG8nIsOaWd6vQ4HPbrZxSV3WA7rOeb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
