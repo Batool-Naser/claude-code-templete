@@ -108,6 +108,13 @@ Screen → Notifier → Repository → Provider → API / Database
 | Model | `<name>_model.dart` |
 | Riverpod vars | ends with `Provider` |
 
+## Workflow Rules
+
+Before executing any task:
+1. Run `git status` to check for uncommitted changes.
+2. If uncommitted changes exist **and** the new prompt is unrelated to those changes, commit the existing changes first with a descriptive message, then proceed with the new task.
+3. If the new prompt continues or extends the current changes, proceed without committing first.
+
 ## Slash Commands
 
 Custom commands live in `.claude/commands/`. Invoke with `/project:<name>`.
