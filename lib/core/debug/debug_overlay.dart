@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:todo_app/core/router/app_router.dart';
 import 'debug_error_collector.dart';
 
 class DebugOverlay extends StatelessWidget {
@@ -44,8 +45,10 @@ class _DebugButtonState extends State<_DebugButton> {
   void _refresh() => setState(() {});
 
   void _showPanel() {
+    final ctx = appNavigatorKey.currentContext;
+    if (ctx == null) return;
     showModalBottomSheet(
-      context: context,
+      context: ctx,
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
       builder: (_) => const _ErrorPanel(),

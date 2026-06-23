@@ -41,10 +41,13 @@ class AppRoutes {
   static const dailyRoutine = '/daily-routine';
 }
 
+final appNavigatorKey = GlobalKey<NavigatorState>();
+
 final routerProvider = Provider<GoRouter>((ref) {
   final authState = ref.watch(authStateProvider);
 
   return GoRouter(
+    navigatorKey: appNavigatorKey,
     initialLocation: AppRoutes.splash,
     redirect: (context, state) async {
       final isLoggedIn = authState.value != null;
