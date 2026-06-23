@@ -1,5 +1,5 @@
 name: todo_app
-description: "A new Flutter project."
+description: "AI Smart Alarm - Intelligent Wake-Up Assistant"
 publish_to: 'none'
 version: 0.1.0+1
 
@@ -7,22 +7,57 @@ environment:
   sdk: ^3.12.2
 
 dependencies:
-  firebase_core: ^4.11.0
   flutter:
     sdk: flutter
-  flutter_riverpod: ^2.6.1
-  freezed_annotation: ^2.4.4
-  json_annotation: ^4.9.0
+
+  # State management
+  flutter_riverpod: ^3.3.2
+  riverpod_annotation: ^4.0.3
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.12.0
+
+  # Firebase (versions matched to firebase_core ^4.11.0)
+  firebase_core: ^4.11.0
+  firebase_auth: ^6.5.4
+  cloud_firestore: ^6.6.0
+
+  # Navigation
+  go_router: ^17.3.0
+
+  # AI (Gemini)
+  google_generative_ai: ^0.4.7
+
+  # Auth providers
+  google_sign_in: ^7.2.0
+  sign_in_with_apple: ^8.1.0
+
+  # Notifications / Alarms
+  flutter_local_notifications: ^22.0.1
+  timezone: ^0.11.0
+
+  # Local storage
+  shared_preferences: ^2.5.5
+
+  # HTTP client
+  dio: ^5.9.2
+
+  # Utilities
+  intl: ^0.20.2
+  permission_handler: ^12.0.3
+  flutter_animate: ^4.5.2
+  uuid: ^4.5.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
-  build_runner: ^2.4.13
-  freezed: ^2.5.7
-  json_serializable: ^6.8.0
-  riverpod_generator: ^2.6.3
-  riverpod_annotation: ^2.6.1
+  build_runner: ^2.15.0
+  freezed: ^3.2.5
+  json_serializable: ^6.14.0
+  riverpod_generator: ^4.0.4
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/animations/
