@@ -1,0 +1,16 @@
+{
+  "id": "session-1782131847682",
+  "startedAt": "2026-06-22T12:37:27.682Z",
+  "platform": "darwin",
+  "cwd": "/Volumes/AIProsysX/Projects/Flutter/todo_app",
+  "context": {},
+  "metrics": {
+    "edits": 42,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  },
+  "restoredAt": "2026-06-22T12:55:48.944Z",
+  "endedAt": "2026-06-22T13:06:05.595Z",
+  "duration": 1717918
+}
