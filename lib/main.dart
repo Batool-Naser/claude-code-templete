@@ -1,6 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:todo_app/core/debug/debug_error_collector.dart';
+import 'package:todo_app/core/debug/debug_overlay.dart';
 import 'package:todo_app/core/router/app_router.dart';
 import 'package:todo_app/core/services/ai_service.dart';
 import 'package:todo_app/core/services/notification_service.dart';
@@ -9,6 +12,8 @@ import 'package:todo_app/firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  if (kDebugMode) DebugErrorCollector.install();
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await NotificationService.initialize();
@@ -29,6 +34,7 @@ class AISmartAlarmApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.dark,
       routerConfig: router,
+      builder: (context, child) => DebugOverlay(child: child ?? const SizedBox.shrink()),
     );
   }
 }
